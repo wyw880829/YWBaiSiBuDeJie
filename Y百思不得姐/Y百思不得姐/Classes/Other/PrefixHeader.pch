@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  Y百思不得姐
+//
+//  Created by wyw on 16/5/11.
+//  Copyright © 2016年 qw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+YExtension.h"
+#import "YConst.h"
+#import "NSDate+YExtention.h"
+#import "UIImage+YExtention.h"
+
+// tag字体大小
+#define YTagFont [UIFont systemFontOfSize:14]
+
+// tag背景颜色
+#define YTagBG [UIColor colorWithRed:0.2455 green:0.4039 blue:1.0 alpha:1.0]
+
+
+// 调试打印
+#ifdef DEBUG
+#define YLog(...) NSLog(__VA_ARGS__)
+#else
+#define YLog(...)
+#endif
+
+// 打印方法名称
+#define YLogFunc YLog(@"%s",__func__)
+
+// 随机颜色
+#define RANDOMCOLOR [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0]
+// 背景色
+#define YGlobalBG [UIColor colorWithRed:233/255.0 green:233/255.0 blue:233/255.0 alpha:1.0]
+
+// 服务器地址
+#define SEVERICEURL @"http://api.budejie.com/api/api_open.php"
+
+// 屏幕的宽度、高度
+#define SCREENWIDTH     [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT    [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */

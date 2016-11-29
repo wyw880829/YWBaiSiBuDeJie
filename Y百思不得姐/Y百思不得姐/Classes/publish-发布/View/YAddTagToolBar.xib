@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YAddTagToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymz-wR-svF" userLabel="topView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkJ-nE-qOl" userLabel="bottomView">
+                    <rect key="frame" x="0.0" y="55" width="320" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS3-YI-aP5" userLabel="@">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="cgY-Eg-IPP"/>
+                            </constraints>
+                            <state key="normal" image="post-@"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUe-at-Ieb" userLabel="@">
+                            <rect key="frame" x="35" y="0.0" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="dvC-0M-QuN"/>
+                            </constraints>
+                            <state key="normal" image="post-#"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BS3-YI-aP5" firstAttribute="leading" secondItem="gkJ-nE-qOl" secondAttribute="leading" id="9td-Th-ZnH"/>
+                        <constraint firstItem="BS3-YI-aP5" firstAttribute="top" secondItem="gkJ-nE-qOl" secondAttribute="top" id="CzB-Tp-b0v"/>
+                        <constraint firstAttribute="bottom" secondItem="BS3-YI-aP5" secondAttribute="bottom" id="Dab-3O-TEV"/>
+                        <constraint firstAttribute="height" constant="35" id="Kvq-2B-Y96"/>
+                        <constraint firstItem="pUe-at-Ieb" firstAttribute="leading" secondItem="BS3-YI-aP5" secondAttribute="trailing" id="bFu-ld-hnn"/>
+                        <constraint firstAttribute="bottom" secondItem="pUe-at-Ieb" secondAttribute="bottom" id="x8u-73-SmT"/>
+                        <constraint firstItem="pUe-at-Ieb" firstAttribute="top" secondItem="gkJ-nE-qOl" secondAttribute="top" id="zJH-fc-FwU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gkJ-nE-qOl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="26a-7v-Ioc"/>
+                <constraint firstItem="Ymz-wR-svF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Pi-CN-aO4"/>
+                <constraint firstItem="gkJ-nE-qOl" firstAttribute="top" secondItem="Ymz-wR-svF" secondAttribute="bottom" id="H6X-gS-5rl"/>
+                <constraint firstItem="Ymz-wR-svF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LC4-eQ-y04"/>
+                <constraint firstAttribute="bottom" secondItem="gkJ-nE-qOl" secondAttribute="bottom" id="Pnw-PR-KLt"/>
+                <constraint firstAttribute="trailing" secondItem="Ymz-wR-svF" secondAttribute="trailing" id="cZu-aL-cQT"/>
+                <constraint firstAttribute="trailing" secondItem="gkJ-nE-qOl" secondAttribute="trailing" id="l6C-Sj-aA4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topView" destination="Ymz-wR-svF" id="rHA-DZ-bky"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="222"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#" width="19" height="19"/>
+        <image name="post-@" width="19" height="19"/>
+    </resources>
+</document>
